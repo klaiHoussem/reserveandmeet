@@ -1,0 +1,233 @@
+html, body{
+	height: 100%;
+	line-height: 1.5;
+	font-family: 'lato';
+	color: #868697;
+	background: #F4F7F9;
+	position: relative;
+}
+ h1,h2,h3{
+ 	color: #707070;
+ 	margin:0 0 25px 0;
+ }
+
+ h1{
+ 	font-weight: 600;
+ 	font-size: 68px;
+ }
+ h2{
+ 	font-weight: 550;
+ 	font-size: 35px;
+
+ }
+ h3{
+ 	font-weight: 500;
+ 	font-size: 20px;
+
+ }
+  h4{
+ 	font-weight: bold;
+ 	font-size: 15px;
+ }
+ p{
+ 	margin: 0;
+ }
+ .p-s-100{
+ 	padding: 100px 0;
+ }
+  .p-s-70{
+ 	padding: 100px 0 70px 0;
+ }
+ .p-r {
+ 	padding-right: 40px;
+ }
+
+ /*font awesome*/
+.fa, 
+.fab,
+.fal,
+.far,
+.fas {
+	line-height: 1.5;
+}
+
+a{
+	transition: all .3s ease-in-out;
+}
+
+
+.navbar{
+	padding:5px 0 0;
+	transition: all .3s ease-in-out;
+}
+
+.top-nav {
+padding: 5px 0;
+background: #3F9ADF;
+box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.26);
+}
+
+.back-img{
+	height: 100%;
+	width: 100%;
+	background: url('../image/backgroundimage.png') no-repeat center center;
+	background-size: cover;
+}
+
+nav .nav-link {
+	color: #fff;
+}
+nav .nav-link:hover {
+	color: #000;
+	/*text-decoration: underline #3F9ADF;*/
+}
+@media (min-width: 992px){
+	.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0 30px ;
+}
+.nav-item: last-child .nav-link {
+    padding-right: 0;
+    padding-left: 30px;
+}
+
+.row {
+
+    margin-right: 0px; 
+    margin-left: -15px;
+  }
+
+.btn {
+ border: none;
+  padding: 2px 12px;
+
+}
+
+.top-nav .btn {
+	background-color: #fff;
+	color: #3F9ADF;
+}
+.col-6 {
+    
+    flex: 0 0 0 0%;
+    padding-right: 0 60px 0 0;
+    }
+
+.icons {
+	padding: 30px 12px 0 0;
+
+}
+.test {
+    	padding :20px 140px;
+    }
+.info {
+    	padding :50px 50px 0;
+    	
+    }
+
+
+.card {
+    	box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.26);
+    	border-radius: calc(1.25rem - 10px);
+    }
+
+    .card-img-top {
+    width: 100%;
+    border-top-left-radius: calc(1.25rem - 10px);
+    border-top-right-radius: calc(1.25rem - 10px);
+    border-bottom-left-radius: calc(1.25rem - 10px);
+    border-bottom-right-radius: calc(1.25rem - 10px);
+    box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.26);
+     transition: all .3s ease-in-out;
+}
+
+.card {
+	height: 171px; 
+  overflow: hidden;
+}
+
+.card img {
+  transition: transform .5s ease;
+}
+.card:hover img {
+  transform: scale(1.2);
+
+
+}
+
+.text {
+	padding: 300px 0px 0;
+	font-color: #fff;
+	color:#fff;
+}
+.card-body .btn:hover {
+	background-color: #000;
+	color:#fff;
+	border-bottom:#3F9ADF; 
+
+	}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #000;
+    border-color: #0062cc;
+}
+
+/*search box css start here*/
+.search-sec{
+    padding: 0,5rem;
+}
+.search-slt{
+    display: block;
+    width: 100%;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: #55595c;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    height: calc(3rem + 2px) !important;
+    border-radius:0;
+}
+.form-control{
+	height: 50px;
+	
+}
+.gj-datepicker-bootstrap {
+	height: 50px;
+}
+.gj-datepicker-bootstrap [role=right-icon] button {
+    width: 38px;
+    position: relative;background-color: #fff;
+}
+.gj-datepicker-bootstrap [role=right-icon] button:hover {
+    color: #6c757d;
+    background-color: #fff;
+}
+
+.wrn-btn{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    height: calc(3rem + 2px) !important;
+    border-radius:0;
+}
+
+.search-box .row {
+    margin-right: 187px;
+    margin-left: 0px;
+}
+
+.ft-main{
+	display:flex;
+	flex:wrap;
+}
+
+.ft-main-item{
+	margin:35px;
+	margin-left:100px !important;
+	margin-top: 30px!important;
+}
+.Copyright {
+	background-color: #000;
+}

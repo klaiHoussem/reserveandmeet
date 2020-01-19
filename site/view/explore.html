@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+<meta name="Viewport" content="width = device-width , initial-scale=1"/> 
+<title>  </title> 
+<link rel ="stylesheet" href="css/bootstrap.min.css" >
+<link rel ="stylesheet" href="explore.css" > 
+
+ 
+</head>
+<body> 
+
+  <nav class="navbar navbar-expand-lg fixed-top ">
+    
+    <div class="container">
+<a class="navbar-brand" href="home.php">
+          <img src="../image/reserv&meet-logo.png" alt="">
+        </a>
+  
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      
+      <li class="nav-item">
+        <a class="nav-link" href="#">Category </a>
+      </li>
+     
+        <a class="nav-link" href="ajouterEspace.php">Share your space</a>
+      </li>
+
+      <div class="row">
+  <div class="col-6 border-right"></div>
+  <div class="col-6 border-left"></div>
+    <div class="col-13"></div>
+</div>
+      <button type="button" class="btn btn-primary">Explore</button>
+     <li class="nav-item">
+        <?php 
+      include('loginn.php');
+      if (isset($_SESSION['login_user'])){
+      
+      echo '<div class="nav-link" href="welcome.php"><img style="vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;" src="../image/user.png" alt="Avatar" class="avatar"></div> ';
+     } 
+     else {
+     echo '<a class="nav-link" href="SignIn.php">Connect</a>';
+
+ }
+      ?>
+      </li>
+    </ul>
+    </div>
+  </div>
+</div>
+</nav>
+
+<!--Content -->
+<header class="test"><h3>Conference theatre</h3>
+
+<div class="row row-cols-1 row-cols-md-3">
+  <div class="col mb-4">
+    <div class="card h-100">
+      <img src="../image/teemu-paananen-bzdhc5b3Bxs-unsplash.jpg" class="card-img-top" alt="This zooms-in really well and smooth">
+
+      <div class="card-body text-center">
+        <h3 class="card-title">Conference Room</h3>
+        <p class="card-text"> Hotel Africa</p>
+        <a href="#" class="btn btn-primary">Reserve</a>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card h-100">
+      <img src="../image/teemu-paananen-bzdhc5b3Bxs-unsplash.jpg" class="card-img-top" alt="...">
+      <div class="card-body text-center">
+        <h3 class="card-title">Card title</h3>
+        <p class="card-text">This is a short card.</p>
+        <a href="#" class="btn btn-primary">Reserve</a>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card h-100">
+      <img src="../image/teemu-paananen-bzdhc5b3Bxs-unsplash.jpg" class="card-img-top" alt="...">
+      <div class="card-body text-center">
+        <h3 class="card-title">Théatre Opera</h3>
+        <p class="card-text">Cité de la culture</p>
+        <a href="#" class="btn btn-primary">Reserve</a>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card h-100">
+      <img src="../image/teemu-paananen-bzdhc5b3Bxs-unsplash.jpg" class="card-img-top" alt="...">
+      <div class="card-body text-center">
+        <h3 class="card-title">Card title</h3>
+        <p class="card-text">This is a longer card with supporting.</p>
+        
+        <a href="#" class="btn btn-primary">Reserve</a>
+      </div>
+    </div>
+  </div>
+  </header>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<script src = "js/jquery-3.4.1.min.js" > </script>
+<script src = "js/popper.min.js" > </script>
+<script src = "js/bootstrap.min.js" > </script>
+<script src = "js/scripts.js" > </script>
+
+
+
+</body>
+</html>
+
+<html>
+<head>

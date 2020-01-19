@@ -8,6 +8,7 @@ class espace
 	private $nomesp;
 	private $localisation;
 	private $capacite;
+    private $description;
 	private $image;
 	private $type;
 	
@@ -50,6 +51,9 @@ class espace
     public function getCapacite(){
     	return $this->capacite;
     }
+    public function getDescription(){
+        return $this->description;
+    }
     public function getImage(){
     	return $this->image;
     }
@@ -66,6 +70,9 @@ class espace
     }
     public function setCapacite($capacite){
     	$this->capacite=$capacite;
+    }
+    public function setDescription($description){
+        $this->description=$description;
     }
     public function setImage($image){
     	$this->image=$image;

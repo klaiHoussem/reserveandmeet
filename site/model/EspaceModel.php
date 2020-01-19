@@ -16,6 +16,7 @@
         $this->espace->setnomesp($_POST['nomesp']);
         $this->espace->setlocalisation($_POST['localisation']);
         $this->espace->setcapacite($_POST['capacite']);
+        $this->espace->setdescription($_POST['description']);
         $this->espace->setimage($_FILES['image']['name']);
         $this->espace->settype($_POST['type']);
         
@@ -47,10 +48,29 @@
     }
 }
 
-        $sql = "INSERT INTO espace (nomesp, localisation, capacite, image, type ) "
-                . "VALUES ('".$this->espace->getnomesp()."','".$this->espace->getlocalisation()."','".$this->espace->getcapacite()."','".$this->espace->getimage()."','".$this->espace->gettype()."')";
+        $sql = "INSERT INTO espace (nomesp, localisation, capacite, description, image, type)"
+                . "VALUES ('".$this->espace->getnomesp()."','".$this->espace->getlocalisation()."','".$this->espace->getcapacite()."','".$this->espace->getdescription()."','".$this->espace->getimage()."','".$this->espace->gettype()."')";
                 
         $db-> query($sql);
     } 
+
+
+
+/* public function afficherEspace(){
+        $db = new Db();
+      $nomesp = $_POST['nomesp'];
+    $localisation = $_POST['localisation'];
+    $capacite = $_POST['capacite'];
+    $description = $_POST['description'];
+    $image = $_FILES['image']['name'];
+    $type = $_POST['type'];
+
+    $sql = "SELECT * FROM espace  ";
+               
+                
+       $result= $db-> query($sql);
+       $aff=mysqli_fetch_assos($result);
+       return $result;
+    }   */ 
 }
 ?>

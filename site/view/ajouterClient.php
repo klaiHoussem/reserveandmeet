@@ -1,19 +1,3 @@
-<!--<!DOCTYPE html>
-<html>
-<head>
-	<title>ajouter client</title>
-</head>
-<body>
-	<form method="POST" action="../controller/ajouterClientController.php">
-		<input type="text" name="nom" placeholder="nom">
-		<input type="text" name="prenom" placeholder="prenom">
-		<input type="text" name="email" placeholder="email">
-		<input type="password" name="password" placeholder="password">
-		<input type="text" name="nomentreprise" placeholder="nomentreprise">
-		<input type="submit" name="ajouter" value="ajouter client">
-	</form>
-</body>
-</html>-->
 
 <!DOCTYPE html>
 <html>
@@ -22,31 +6,52 @@
 <meta name="Viewport" content="width = device-width , initial-scale=1"/> 
 <title>  </title> 
 <link rel ="stylesheet" href="css/bootstrap.min.css" > 
+<link rel ="stylesheet" href="style.css" > 
+<link rel ="stylesheet" href="SignIn.css" > 
 </head>
-<body> 
 
-<div class="row justify-content-center" >
-  <div class="col-6">
-<div class="container">
-  <div class="mt-5">
-<h1 class = "text-success text-center"> Inscrivez vous </h1> 
+<body style="background-color: #fff;">
+ 
+<div class="Illustration">
+
+<img src="../image/schedule_isometric_illustration.png" alt="jdyd" style="float:left;width:500px;height:400px; margin-left: 6%;
+    margin-top: 10%;"></div>
+
+<div class="row">
+
+
+
+<ul id="cat"> 
+<ul class="list-inline"> <li class="list-inline-item">Do you have an account?</li>
+ 
+ <li class="list-inline-item"><a href="SignIn.php">Sign In</li> </ul> 
+ </div></div></a></a></a><br><br>
+ <center>
+ 
+ 
+ <strong> <h3>Login to your personal account </strong></center>
+ <center>
+ <p class="text-secondary" style="margin-top:-20px; margin-bottom: 20px;">Enter your details below</p></center>
+
+
+<header>
 
 <div class="row justify-content-center" >
   <div class="col-8">
   <form method="POST" action="../controller/ajouterClientController.php" enctype="multipart/form-data">
   <div class="form-group">
-    <label for="nom">Nom</label>
-    <input type="text" class="form-control" name="nom" placeholder="nom">
+    <label for="nom">Name</label>
+    <input type="text" class="form-control" name="nom" placeholder="name">
   </div>
 
 <div class="form-group">
-    <label for="prenom">prénom</label>
-    <input type="Text" class="form-control" name="prenom" placeholder="prenom">
+    <label for="prenom">Surname</label>
+    <input type="Text" class="form-control" name="prenom" placeholder="surname">
   </div>
 
  <div class="form-group">
-    <label for="nomentreprise">Entité </label>
-    <input type="text" class="form-control" name="nomentreprise" placeholder="nom de votre entité(NGO/Entreprise/Club/association/ect..)">
+    <label for="nomentreprise">Establishment </label>
+    <input type="text" class="form-control" name="nomentreprise" placeholder="(NGO/Entreprise/Club/association/ect..)"></div>
 
   <div class="form-group">
     <label for="email">Email</label>
@@ -67,9 +72,48 @@
 
  
 
-  <button type="submit" class="btn btn-primary" >Enregistrer</button>
+  <button type="submit" class="btn btn-primary" style="float: right; margin-top: 10%;margin-bottom: 10%;" >Get Started</button>
 </div></div>
 </form>
+</header>
+<footer>
+ <section class="ft-main col" style="display:flex; background-color: #000; color: #fff; " >
+ <div class="ft-main-item" style="margin-left:10%;">
+<h3 style="color: #fff;">Aide<br></h3>
+FAQ<br>
+Contact<br>
+contact@resnmeet.com
+</div>
+
+<div class="ft-main-item" style="margin-left:10%;">
+<h3 style="color: #fff;">A propos<br></h3>
+Condition Générale<br>
+Politique et confidentialité<br>
+
+</div>
+ 
+ <div class="ft-main-item" style="margin-left:10% !important; ">
+<h3 style="color: #fff;">Menu<br></h3>
+Explorer<br>
+Categorie<br>
+
+</div>
+<img src="../image/reserv&meet-logo.png" style="float: right; margin:auto;">
+
+
+</section>
+<div class="bg-info clearfix" style="background-color: #000!important;">
+<div class="footer-copyright text-center py-1" style="background-color:#3F9ADF; color: #fff; width: 40%; float:right; border-radius: 5%;    margin-right: 12%;
+"><a>© 2019 Copyright: Reserve and meet</a>
+    
+
+<!-- Copyright -->
+</div>
+
+
+</div>
+</footer>
+
 <script src = "js/bootstrap.min.js" > </script>
 <script src = "js/jquery-3.4.1.min.js" > </script>
 </body>

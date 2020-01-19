@@ -25,6 +25,19 @@
         $db-> query($sql);
     } 
 
+public function SignInClient(){
+     $db = new Db();
+    $myusername = $_POST['email'];
+    $mypassword = $_POST['password']; 
+    $sql = "SELECT id_client FROM client WHERE email = '$myusername' and password = '$mypassword'";
+      $result = $db->query($sql);
+      
+      return $result;
+  }
+      
+     
+
+
 /*
     public function rechercheuser($rech){
         $bdd = new Db();
